@@ -1,0 +1,22 @@
+{
+  "createNewStudent": {
+    "text": "INSERT INTO estudiantes (nombre, rut, curso, nivel) VALUES ($1,$2,$3,$4)",
+    "values": ["briggitte","19999925-9", "4", "medio"]
+  },
+  "selectAllStudent": {
+    "text": "SELECT * FROM estudiantes;",
+    "rowMode": "array"
+  },
+  "selectStudentByRut": {
+    "text": "SELECT * FROM estudiantes WHERE rut = $1",
+    "values": ["16968690-4"]
+  },
+  "updateStudent": {
+    "text": "UPDATE estudiantes SET nombre = $1, curso = $2, nivel = $3 WHERE rut = $4;",
+    "values": ["nuevo nombre", "nuevo curso", "4b", "19999925-0"]
+  },
+  "deleteStudent": {
+    "text": "DELETE FROM estudiantes WHERE rut = $1;",
+    "values": ["16968690-4"]
+  }
+}
